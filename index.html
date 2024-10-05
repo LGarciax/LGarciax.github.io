@@ -1,20 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan Garcia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/dark.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/media-768.css">
+   
 </head>
 <body>
-    <div class="vh">
-        <div>
-         <div class="wrap">
-          <h1>Em manutenção</h1>
-          <h2><p>Desculpe o incoveniente.<br>Nossa pagina esta em manutenção.<br><br></p></h2>
-          <p>Obrigado pela compreensão</p>
-          </div>
+    <header id="header" class="header">
+        <img src="./assets/img/Logo White.svg" alt="Logo Luan Garcia"> <p>Luan Garcia</p>
+    </header>
+    
+    <main>
+
+        <div id="sidebar" class="sidebar">
+            
+              
+              
+     
+            
+                <div class="account-container">
+                    <div class="card">
+                    <div class="user">
+                        <img id="userAvatar" class="userAvatar" src="./assets/img/LuanGrey.png"/>
+                    </div>
+                  
+                    
+
+                    <div class="accountStats">
+                        <div class="line"></div>
+                        <div class="icons">
+                            <ul style="display: flex;">
+                                <a href="https://www.github.com/LGarciax" target="_blank"><li> <img src="./assets/img/github-mark-white.svg" alt=""> </li></a>
+                               <a href="https://discord.com/invite/kTfQeTX4" target="_blank"><li><img src="./assets/img/discord-mark-white.svg" alt=""></li></a>
+                                <a href="https://bsky.app/profile/lgarcia.bsky.social" target="_blank"><li><img src="./assets/img/bluesky_media_kit_logo_svgs.svg" alt=""></li></a>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="Links-Page">
+                            <ul>
+                                <a href="https://luangarcia.dev.br"><li>Home</li></a>
+                                <a href="https://github.com/LGarciax?tab=repositories" target="_blank"><li>Portfolio</li></a>
+                                <a href=""><li>Blog</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        </div>   
+
+        <div class="detalhe-especial"></div>
+
+        <div class="Container-Main">
+            <div class="Banner">
+
+
+                
+                <div class="banner-text">
+                    
+                    <h1><span class="Destaque">Luan Garcia</span></h1>
+
+                    <div id ="two">
+                        
+                        <p>Eu sou um</p>
+                        <div class="box">
+                            <ul class="banner-list">
+                                <li class="item-1">Estudante</li>
+                                <li class="item-2">Freelancer</li>
+                                <li class="item-3">Geek</li>
+                                <li class="item-4">Escritor</li>
+                                <li class="item-5">Estudante</li>
+                            </ul>  
+                        </div>
+                        
+                    </div>
+                    <div class="line-banner"></div>
+                    <p class="banner-sub">Seja bem vindo, eu me chamo Luan e sou um estudante de Design de Sistemas pela Etec, eu amo tecnologia e escrever.  </p>
+                   <!-- <a href="mailto:contato@luangarcia.dev.br">
+                        <button type="button" class="email">Entre em Contato</button>
+                      </a> -->
+                    
+
+                </div>
+
+            </div>
+        <div class="portfolio-container">
+            <h1>Portfolio</h1>
+            <div class="portfolio">
+                
+                    <div class="carousel-view">
+                      <button id="prev-btn" class="prev-btn">
+                       <div class="botao"><img src="/assets/img/arrow-left.png" alt=""></div>
+                      </button>
+                      
+                       <div id="item-list" class="item-list">
+                        <a class="carr-a" href="https://www.github.com/LGarcia/PW-academia" targer="_blank"> 
+                            <div id="item" class="item">
+                                
+                                <div class="port-img"><img src="/assets/img/Academia.webp" alt=""></div>
+                               
+                                <div class="port-text">
+                                    <h4>Tema: Academia de Artes Marciais</h4>
+                                    <div class="detalhe-texto"></div>
+                                    <p> Projeto para a aula de Programação Web, realizado em grupo para nota da 1ª metade do semestre. visando verificar competencias em HTML e CSS basico.</p>
+                                </div>
+                            
+                            </div>
+                        </a>
+
+                            <a class="carr-a" href="https://github.com/LGarciax/Portfolio-Theme" target="_blank"> 
+                            <div id="item" class="item">
+                                
+                                <div class="port-img"><img src="/assets/img/main-site.webp" alt=""></div>
+                                
+                                <div class="port-text">
+                                    <h4>Tema: Site Pessoal</h4>
+                                    <div class="detalhe-texto"></div>
+                                   
+                                    <p> Um tema basico desenvolvido para meu site portfolio pessoal. Design desenvolvido em busca de ampliar minhas capacidades tecnicas.</p>
+                                </div>
+                          
+                            </div>
+                        </a>
+                            
+
+                        
+                        </div>
+                      <button id="next-btn" class="next-btn">
+                        <div class="botao"><img src="/assets/img/arrow-right.png" alt=""></div>
+                          </button>
+                    </div>
+                
+
+         </div>
+
+
+
+
+
         </div>
-      </div>
+        <div class="Blog-container">
+            <h1 class="titulo-blog">Blog</h1>
+            <div class="Blog">
+
+                <div class="Construcao"><h1>EM CONSTRUÇÃO</h1></div>
+                
+
+            </div>
+
+
+
+
+
+        </div>
+                
+
+
+
+
+            
+
+        
+        </div>
+        
+    </main>
+
+ <script src="./assets/js/carousel.js"></script>
 </body>
 </html>

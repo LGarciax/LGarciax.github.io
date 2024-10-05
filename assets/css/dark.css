@@ -1,0 +1,18 @@
+:root{
+
+    /* color main page */
+
+    --background-main: #212121;
+    --background-section: #303030;
+    --background-section-trans: #246eb944;
+    --text-color: #fff;
+
+    /* color sidebar */
+
+    --side-background-color: #246eb9;
+    --accent-color: #24b9b9;
+    --side-text-color: #fff;
+
+    /*--side-background-color: #246eb9;*/
+
+}
