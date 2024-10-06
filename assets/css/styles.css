@@ -63,6 +63,10 @@ main{
     
 }
 
+.menu{ display: none;}
+
+
+
 /* side */
 
 .sidebar{
@@ -136,7 +140,8 @@ main{
     border-radius: .9375rem;
     background-color: var(--accent-color);
     margin: 3.75rem auto 0rem auto;
-    filter: brightness(120%);
+    filter: brightness(130%);
+    box-shadow: var(--shadow);
     display:flex;
     
 
@@ -247,7 +252,7 @@ main{
 
 .Container-Main{
     width: 100%;
-    margin: 5px;
+    margin: 15px 5px;
     
 }
 
@@ -279,7 +284,7 @@ main{
     height: fit-content;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(.625rem) brightness(90%);
+    backdrop-filter: blur(15px) brightness(80%);
     display: flex;
     flex-direction: column;
     border-radius: .9375rem;
@@ -302,7 +307,7 @@ main{
 
 .Destaque {
      color: var(--accent-color);
-     filter:brightness(130%);
+     filter:brightness(140%);
      
      /*text-shadow: rgba(43,217,217,0.9) 0rem 0rem .875rem;*/
      text-shadow: 0rem .25rem .1875rem rgba(0,0,0,0.4),
@@ -415,7 +420,8 @@ main{
     letter-spacing: 5px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 25px;
+    text-shadow: 1px 1px 2px black ;
   }
 
 /* Portfolio */
@@ -424,10 +430,12 @@ main{
 
 .portfolio{
     
+
+    width: 80dvw;
     border-radius: 15px;
     height: fit-content;
     
-    width: 80dvw;
+    
     box-shadow: var(--shadow);
     border-radius: 15px;
     margin-bottom: 15px;
@@ -599,11 +607,13 @@ transition: 300ms;
   width: 15%;
   padding: .3125rem;
   font-weight: 400;
-  font-size: 18.4px;
-  letter-spacing: 3px;
+  font-size: 1.1875rem;
+  letter-spacing: .25rem;
+  line-height: 1.875rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem .3125rem .9375rem;
   background-color: var(--side-background-color);
   filter: brightness(105%);
+  text-shadow: 1px 1px 3px black;
   border-radius: .3125rem;
 }
 
@@ -615,24 +625,26 @@ transition: 300ms;
   background-color: var(--accent-color);
   filter: brightness(150%);
   box-shadow: var(--shadow);
+
 }
 
 .port-text p{
   text-align: center;
-  line-height: 25px;
+  line-height: 1.875rem;
   width: 74%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: .625rem;
-  font-size: 17.6px;
+  font-size: 1.25rem;
   font-weight: 300;
-  letter-spacing: 5px;
+  letter-spacing: .3125rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem .3125rem .9375rem;
   background-color: var(--side-background-color);
-  filter: brightness(105%);
+  filter: brightness(110%);
   border-radius: .3125rem;
+  text-shadow: 1px 1px 2px black;
 }
 
 
