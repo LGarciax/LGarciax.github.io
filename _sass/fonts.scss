@@ -1,0 +1,176 @@
+
+
+
+body {
+    font-size: 18px;
+    line-height: 1.6;    
+    
+}
+
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #2ff0f0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+    color: #2feaf0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #2fdaf0;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+    color: #2fcaf0;
+}
+
+h5 {
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+    color: #2fbaf0;
+}
+
+h6 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #2faaf0;
+}
+
+
+p {
+    margin-bottom: 1.2em;
+}
+
+
+
+blockquote {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-style: italic;
+    border-left: 4px solid #2ff0f0;
+    padding-left: 1rem;
+    color: #dad9d9;
+    margin: 1.5rem 0;
+}
+
+
+ul,
+ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 0.5rem;
+}
+
+
+code {
+    
+    font-size: 0.875rem;
+    background-color: #615e58;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+pre {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    background-color: #615858;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+
+details {
+    margin-bottom: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+abbr[title] {
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+mark {
+    background-color: yellow;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+sub,
+sup {
+    font-size: 0.75rem;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+
+
+
+

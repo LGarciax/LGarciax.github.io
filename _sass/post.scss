@@ -1,0 +1,168 @@
+.postBody{
+    display:flex;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+.sidebar{
+    min-width: 20%;
+}
+
+.post{
+    width: 70%;
+    display: flex;        
+    flex-direction: column;
+    padding: 0rem 2.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    transition: .2s;
+    margin-left: 5%;
+    z-index: 1;
+
+}
+
+.post h1{
+    color: #2ff0f0;
+}
+
+.post:last-child{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.post-sidebar{
+        position: fixed;
+        height: fit-content;
+        width: 20%;
+        padding: 1rem;
+        border-radius: 16px;
+        background: #17141d;
+        box-shadow: -1rem 0 3rem #000;
+        z-index: 0;
+        
+        
+}
+
+
+
+.post-sidebar .card-author{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.post-sidebar p{
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.post-sidebar h2{
+    margin-left: 20px;
+    
+}
+
+.post-sidebar .tags{
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.closeIcon{
+    display: none;
+}
+
+.post h1{
+    border-bottom: 4px solid #2ff0f0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.latetal {
+    margin-left: 20px;
+}
+
+.post-category {
+    
+    height: fit-content;    
+    padding: 1rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    z-index: 0;
+    display: flex;    
+    gap: 20px;
+
+
+}
+.sumario{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.lista{
+    display: none;
+}
+
+
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: fixed;
+        display: none;
+        z-index: 4;
+       
+    }
+
+    .show{
+        display: block;
+    }
+
+    .post-sidebar{
+        width: fit-content;
+    }
+
+
+    .post {
+        width: 70%;  
+              
+        
+    }
+
+    nav{
+        justify-content: center;
+
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        z-index: 100;      
+        padding: 5px;
+        border: black solid 1px;
+        border-radius: 999px;
+        margin-top: -20px;
+        cursor: pointer;
+    }
+
+    .categoria{
+        display: none;
+    }
+
+    .lista{
+        display: block;
+    }
+
+    
+}

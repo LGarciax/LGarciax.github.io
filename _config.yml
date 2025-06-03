@@ -1,0 +1,17 @@
+title: "Luan Garcia"
+description: "Meu site pessoal, portfólio e blog."
+url: "https://www.luangarcia.dev.br"
+baseurl: "" 
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:categories/:title/
+
+exclude:
+  - README.md
+  - node_modules
+  - vendor

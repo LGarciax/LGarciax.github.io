@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+---
+
+<article class="post" style="width: 90%; margin:auto">
+  <h1>Ultimos Posts</h1>
+  <div class="lista">
+      <h2>Ultimos Posts:</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+    </ul>
+  </div>
+  <div class="categoria">
+    {% for post in site.posts %}
+  <article class="post-category">
+      <div class="lateral">
+      <header class="card-header">
+        <p>{{ post.date | date_to_string }}</p>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </header> 
+      
+      <div class="tags">
+        
+        {% unless p.categories == empty %}
+        {% for categories in post.categories %}
+        <a href="/categoria/{{ categories }}/">{{ categories }}</a>
+        {% endfor %}
+        {% endunless %}  
+  
+      </div>
+  </div>
+  <div class="sumario">
+      {{ post.excerpt }}
+  </div>
+  
+      
+    </article>
+    {% endfor %}
+  </div>

@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="postBody">
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+  <div class="sidebar">
+  
+
+  
+    
+    
+    <article class="post-sidebar">
+      <header class="card-header">
+        <p>{{ page.date | date_to_string }}</p>
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      </header>
+
+      <div class="card-author">
+        <a class="author-avatar" href="#">
+          <img src="/assets/images/Luan.jpg" />
+        </a>
+        <svg class="half-circle" viewBox="0 0 106 57">
+          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+
+        <div class="author-name">
+          <div class="author-name-prefix">{{ page.author }}</div>
+          
+        </div>
+      </div>
+      
+      <div class="tags">
+        
+        {% unless p.categories == empty %}
+        {% for categories in page.categories %}
+        <a href="/categoria/{{ categories }}/">{{ categories }}</a>
+        {% endfor %}
+        {% endunless %}
+
+        
+        
+
+      </div>
+    
+    </article>
+
+
+
+
+
+           
+</div>
+
+
+  <article class="post">
+    <h1>{{ page.title }}</h1>
+       {{ content }}
+  </article>
+</div>
+
+<script src="{{ '/assets/js/button.js' | relative_url }}"></script>

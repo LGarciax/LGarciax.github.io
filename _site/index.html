@@ -1,9 +1,23 @@
----
-layout: default
-title: home
----
-
-<div class="header"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/" class="current">Home</a>
+  
+    <a href="/blog.html">Blog</a>
+  
+</nav>
+<div class="navspacing"></div>
+    <section class="main"><div class="header"></div>
     <section class="hero">
       <div class="text-hero">
         <h1>Luan Garcia</h1>
@@ -20,34 +34,34 @@ title: home
         <article class="category">
           <a href="/blog"><h1>POSTS</h1></a>
         </article>
-        {% for post in site.posts %}
+        
         <article class="card">
           <header class="card-header">
-            <p>{{ post.date | date_to_string }}</p>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>03 Jun 2025</p>
+            <h2><a href="/pessoal/2025/06/03/Hello-World.html">Hello world</a></h2>
           </header>
   
           <div class="card-author">
             <a class="author-avatar" href="#">
-              <img src="{{'./assets/images/Luan.jpg' | relative_url}}" />
+              <img src="/assets/images/Luan.jpg" />
             </a>
             <svg class="half-circle" viewBox="0 0 106 57">
               <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
             </svg>
   
             <div class="author-name">
-              <div class="author-name-prefix">{{ post.author }}</div>
+              <div class="author-name-prefix">LGarcia</div>
               
             </div>
           </div>
           
           <div class="tags">
             
-            {% unless p.categories == empty %}
-            {% for categories in post.categories %}
-            <a href="/categoria/{{ categories }}/">{{ categories }}</a>
-            {% endfor %}
-            {% endunless %}
+            
+            
+            <a href="/categoria/pessoal/">pessoal</a>
+            
+            
 
             
 
@@ -56,8 +70,10 @@ title: home
           </div>
         
         </article>
-  {% endfor %}
+  
   
   
    </section>
-   
+   </section>
+  </body>
+</html>
