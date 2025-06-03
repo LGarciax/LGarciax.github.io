@@ -8,6 +8,10 @@ title: home
       <div class="text-hero">
         <h1>Luan Garcia</h1>
         <p>Desenvolvedor, Escritor, Designer</p>
+        <div class="contato">           
+          <a href="https://github.com/LGarciax" target="_blank"><img class="icon" src="/assets/images/github-mark-white.svg" alt="github">GitHub</a>
+          
+        </div>
         
       </div>
       
@@ -26,7 +30,7 @@ title: home
             <p>{{ post.date | date_to_string }}</p>
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
           </header>
-  
+          <p>{{ post.sumary}}</p>
           <div class="card-author">
             <a class="author-avatar" href="#">
               <img src="{{'./assets/images/Luan.jpg' | relative_url}}" />
@@ -60,4 +64,50 @@ title: home
   
   
    </section>
+
+   
+   <section class="card-list">
+    <article class="category">
+      <a href="/categoria/projetos"><h1>PROJECTS</h1></a>
+    </article>
+    {% for post in site.categories["projetos"] %}
+    <article class="card">
+      <header class="card-header">
+        <p>{{ post.date | date_to_string }}</p>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+      <p>{{ post.sumary}}</p>
+      <div class="card-author">
+        <a class="author-avatar" href="#">
+          <img src="{{'./assets/images/Luan.jpg' | relative_url}}" />
+        </a>
+        <svg class="half-circle" viewBox="0 0 106 57">
+          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+
+        <div class="author-name">
+          <div class="author-name-prefix">{{ post.author }}</div>
+          
+        </div>
+      </div>
+      
+      <div class="tags">
+        
+        {% unless p.categories == empty %}
+        {% for categories in post.categories %}
+        <a href="/categoria/{{ categories }}/">{{ categories }}</a>
+        {% endfor %}
+        {% endunless %}
+
+        
+
+        
+
+      </div>
+    
+    </article>
+{% endfor %}
+
+
+</section>
    

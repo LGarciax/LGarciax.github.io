@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/">Home</a>
+  
+    <a href="/blog">Blog</a>
+  
+</nav>
+<div class="navspacing"></div>
+    <section class="main"><div class="postBody">
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+  <div class="sidebar">
+  
+
+  
+    
+    
+    <article class="post-sidebar">
+      <header class="card-header">
+        <p>03 Jun 2025</p>
+        <h2><a href="/projetos/matematica/Game-of-Life/">Game of Life</a></h2>
+      </header>
+
+      <div class="card-author">
+        <a class="author-avatar" href="#">
+          <img src="/assets/images/Luan.jpg" />
+        </a>
+        <svg class="half-circle" viewBox="0 0 106 57">
+          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+
+        <div class="author-name">
+          <div class="author-name-prefix">LGarcia</div>
+          
+        </div>
+      </div>
+      
+      <div class="tags">
+        
+        
+        
+        <a href="/categoria/projetos/">projetos</a>
+        
+        <a href="/categoria/matematica/">matematica</a>
+        
+        
+
+        
+        
+
+      </div>
+    
+    </article>
+
+
+
+
+
+           
+</div>
+
+
+  <article class="post">
+    <h1>Game of Life</h1>
+       <div class="text-post"><blockquote>
+  <p>O Jogo da Vida de Conway cria um universo a partir de poucas regras.<br />
+Incrível pensar que algo tão complexo pode ter uma origem tão simples,<br />
+nos faz pensar sobre as regras que regem o nosso próprio universo.</p>
+</blockquote>
+
+<h2 id="história">História</h2>
+<hr />
+
+<p>Em 1968, <strong><a href="https://pt.wikipedia.org/wiki/John_Conway">John Conway</a></strong>, utilizando lógica matemática e inspirado por trabalhos anteriores, começou a realizar uma série de experimentos com regras de automação celular em duas dimensões. Seu objetivo inicial era criar um “robô” celular que fosse interessante e imprevisível e, em outubro de 1970, a primeira aparição pública dessa versão do Jogo da Vida foi realizada.</p>
+
+<h3 id="regras">Regras</h3>
+
+<p>O Jogo da Vida acontece em um arranjo bidimensional infinito, cada célula pode estar em dois estados, viva ou morta, e cada uma delas interage com as 8 células que a cercam. O jogo evolui em gerações e, a cada geração, as células definem seu estado seguindo algumas regras simples:</p>
+
+<ol>
+  <li>Toda célula morta com exatamente três vizinhos vivos torna-se viva (nascimento).</li>
+  <li>Toda célula viva com menos de dois vizinhos vivos morre por isolamento.</li>
+  <li>Toda célula viva com mais de três vizinhos vivos morre por superpopulação.</li>
+  <li>Toda célula viva com dois ou três vizinhos vivos permanece viva.</li>
+</ol>
+
+<p>E com essas simples regras você cria um universo.</p>
+
+<hr />
+
+<p>A primeira vez que eu ouvi falar sobre o Jogo da Vida, ele me pareceu algo simples e pouco interessante. Eu sabia que era muito comum que um dos primeiros programas que as pessoas criassem fosse alguma versão dele, mas não entendia o apelo.</p>
+
+<p>Isso mudou após assistir a um vídeo de um canal do YouTube excelente chamado <a href="https://www.youtube.com/@veritasium">Veritasium</a>. Enquanto o vídeo em si não era sobre o Jogo da Vida, mas sim sobre a ideia de que algumas verdades não podem ser provadas (<a href="https://youtu.be/HeQX2HjkcNo">Math’s Fundamental Flaw</a>), ele utiliza o Jogo da Vida para ilustrar a ideia de um <a href="https://pt.wikipedia.org/wiki/Problema_indecid%C3%ADvel">problema indecidível</a>, um problema em que, dado um estado A, é impossível saber se um estado B é consequência de A.<br />
+Basicamente, se você sabe A, é impossível saber se B vai ou não acontecer.</p>
+
+<h4 id="jogo-da-vida-e-turing-machine">Jogo da Vida e Turing Machine</h4>
+
+<p>Em 1936, Alan Turing acabou por responder a uma pergunta que deixava matemáticos acordados à noite: a Matemática em si é um problema decidível? Isto é, é possível criar um algoritmo que sempre consiga determinar se uma afirmação segue os axiomas matemáticos?</p>
+
+<p>Uma Máquina de Turing é um modelo teórico de computação. Pense nela como um computador abstrato, que se restringe apenas aos aspectos lógicos mais básicos de um computador. Em teoria, uma máquina assim, mesmo simples, é capaz de simular e resolver qualquer algoritmo, dado tempo suficiente.</p>
+
+<p>Turing imaginou uma máquina que recebia uma tira com instruções simples — pense em 0 e 1 em sequência — e, baseando-se no que ela recebia, seguiria uma série de instruções diferentes até que, eventualmente, ela pararia. Essa parada equivaleria ao fim do programa e, dado esse fato, veio o problema: é possível determinar se uma Máquina de Turing para, independente do programa enviado?</p>
+
+<p>Turing provou que não existe um algoritmo geral que consiga determinar se uma Máquina de Turing qualquer irá parar ou rodar indefinidamente. Esse é o famoso “problema da parada”. Em outras palavras, não há uma fórmula ou método que, para todo e qualquer programa, consiga prever se ele eventualmente vai terminar ou se vai ficar preso em um loop infinito.</p>
+
+<p>Esse resultado foi um divisor de águas na história da computação e da matemática, pois mostrou que existem limites fundamentais para o que podemos saber e prever, mesmo em sistemas regidos por regras bem definidas.</p>
+
+<p>Essa ideia de indecidibilidade se conecta diretamente ao Jogo da Vida. Embora ele seja baseado em regras simples e claras, também é impossível, de forma geral, prever o que vai acontecer com um padrão inicial sem efetivamente simular a evolução geração após geração.<br />
+Assim como no problema da parada, não existe um algoritmo universal que, dado um padrão de células no Jogo da Vida, consiga dizer se ele vai estabilizar, entrar em um ciclo ou crescer indefinidamente. A única maneira de descobrir é deixando o sistema rodar e ver o que acontece.</p>
+
+<p>O que mais me impressionou foi descobrir que o Jogo da Vida é Turing completo, ou seja, ele pode simular uma Máquina de Turing. Em teoria, isso significa que o Jogo da Vida pode rodar qualquer algoritmo que um computador moderno consegue — claro que não tão facilmente.</p>
+
+<p>Então eu decidi seguir a tradição e fazer o que tantos outros fizeram: a minha própria versão do Jogo da Vida. Fiz em Java porque precisava treinar um pouco usar Swing — <a href="https://github.com/LGarciax/GameOfLife">Jogo da Vida</a>. Fiz apenas uma pequena modificação: minhas células têm idade. Queria saber se a velhice poderia mudar o resultado imprevisível do jogo. Recomendo a todos criarem uma versão desse jogo ao menos uma vez.</p>
+</div>
+  </article>
+</div>
+
+<script src="/assets/js/button.js"></script></section>
+  </body>
+</html>

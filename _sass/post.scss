@@ -99,7 +99,8 @@
     background: #17141d;
     box-shadow: -1rem 0 3rem #000;
     z-index: 0;
-    display: flex;    
+    display: flex;
+    margin-bottom: 10px;    
     gap: 20px;
 
 
@@ -115,7 +116,14 @@
     display: none;
 }
 
+.text-post{
+    width: 80%;
+    margin: 30px auto;
+}
 
+.post a {
+    color: #2faaf0;
+}
 
 @media (max-width: 480px) {
     .sidebar {
@@ -140,6 +148,7 @@
         
     }
 
+   
     nav{
         justify-content: center;
 
@@ -162,6 +171,25 @@
 
     .lista{
         display: block;
+    }
+
+    .postBody{
+        width: 100%;
+        display: block;
+    }
+
+    .post{
+        padding: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .text-post{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
     }
 
     

@@ -342,7 +342,6 @@ nav a:last-child {
 }
 
 .card-header h2 {
-  font-size: 20px;
   margin: 0.25rem 0 auto;
   cursor: pointer;
 }
@@ -388,6 +387,46 @@ a {
   -webkit-box-decoration-break: clone;
   background-clip: text;
   border-color: white;
+}
+
+.contato {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contato a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 3px solid #bebebe;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  position: relative;
+}
+
+.contato a:hover {
+  background: linear-gradient(90deg, #2ff0f0, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
+}
+
+.contato a .icon {
+  height: 20px;
 }
 
 .postBody {
@@ -484,6 +523,7 @@ a {
   box-shadow: -1rem 0 3rem #000;
   z-index: 0;
   display: flex;
+  margin-bottom: 10px;
   gap: 20px;
 }
 
@@ -495,6 +535,15 @@ a {
 
 .lista {
   display: none;
+}
+
+.text-post {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.post a {
+  color: #2faaf0;
 }
 
 @media (max-width: 480px) {
@@ -530,6 +579,21 @@ a {
   }
   .lista {
     display: block;
+  }
+  .postBody {
+    width: 100%;
+    display: block;
+  }
+  .post {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+  }
+  .text-post {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
   }
 }
 
