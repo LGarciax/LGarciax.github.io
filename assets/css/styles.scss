@@ -1,9 +1,9 @@
 --- 
 --- 
-@use "fonts";
+@import "fonts";
 
-@use "main";
+@import "main";
 
-@use "landing";
+@import "landing";
 
-@use "post";
+@import "post";
