@@ -3,22 +3,26 @@ layout: default
 title: home
 ---
 
-<div class="header"></div>
-    <section class="hero">
-      <div class="text-hero">
-        <h1>Luan Garcia</h1>
-        <p>Desenvolvedor, Escritor, Designer</p>
-        <div class="contato">           
-          <a href="https://github.com/LGarciax" target="_blank"><img class="icon" src="/assets/images/github-mark-white.svg" alt="github">GitHub</a>
-          
-        </div>
-        
-      </div>
-      
-    </section>
+
+<section class="hero">   
+  <div class="heroImg">
+    <img src="{{'./assets/images/notebook.jpg' | relative_url}}" />
+  </div>
+
+  <div class="text-hero">
+    <h1>Luan Garcia</h1>
+    <p>Desenvolvedor, Escritor, Designer</p>
+    <div class="contato">   
+            
+      <a href="https://github.com/LGarciax" target="_blank">
+        <img class="icon" src="{{'./assets/images/github-mark-white.svg' | relative_url}}" />  GitHub
+      </a>
+    </div>
+  </div>
+</section>
 
     
-
+<div class="Blog">
 
       <section class="card-list">
         <article class="category">
@@ -65,7 +69,9 @@ title: home
   
    </section>
 
-   
+  </div>
+  <div class="Blog">
+
    <section class="card-list">
     <article class="category">
       <a href="/categoria/projetos"><h1>PROJECTS</h1></a>
@@ -107,7 +113,7 @@ title: home
     
     </article>
 {% endfor %}
-
+</div>
 
 </section>
-   
+   <script src="{{ '/assets/js/button.js' | relative_url }}"></script>

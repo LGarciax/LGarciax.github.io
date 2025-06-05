@@ -1,21 +1,19 @@
-const postBody = document.querySelector(".postBody");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
-const sidebar = document.querySelector(".sidebar");
+const sidebar = document.querySelector(".sidebar"); // pode não existir
+const nav = document.querySelector(".navitems");
 
-function toggleMenu() {
-  if (sidebar.classList.contains("show")) {
-    sidebar.classList.remove("show");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    sidebar.classList.add("show");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    if (sidebar) {
+      sidebar.classList.toggle("show");
+    }
+
+    nav.classList.toggle("show");
+
+    const show = nav.classList.contains("show");
+    closeIcon.style.display = show ? "block" : "none";
+    menuIcon.style.display = show ? "none" : "block";
+  });
 }
-
-
-
-hamburger.addEventListener("click", toggleMenu);

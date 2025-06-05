@@ -3,15 +3,8 @@ layout: default
 ---
 
 <div class="postBody">
-  <button class="hamburger">
-    <i class="menuIcon material-icons">menu</i>
-    <i class="closeIcon material-icons">close</i>
-  </button>
-  <div class="sidebar">
-  
 
-  
-    
+  <div class="sidebar">    
     
     <article class="post-sidebar">
       <header class="card-header">
@@ -39,10 +32,7 @@ layout: default
         {% for categories in page.categories %}
         <a href="/categoria/{{ categories }}/">{{ categories }}</a>
         {% endfor %}
-        {% endunless %}
-
-        
-        
+        {% endunless %}       
 
       </div>
     
@@ -56,7 +46,7 @@ layout: default
 </div>
 
 
-  <article class="post">
+  <article class="post" style="margin: auto;">
     <h1>{{ page.title }}</h1>
        <div class="text-post">{{ content }}</div>
   </article>

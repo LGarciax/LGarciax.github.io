@@ -1,6 +1,14 @@
 <nav>
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+  <div class="navitems">   
+    
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
+</div>
+
+
 </nav>
-<div class="navspacing"></div>
