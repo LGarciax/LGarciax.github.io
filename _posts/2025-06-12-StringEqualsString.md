@@ -3,7 +3,7 @@ layout: post
 author: LGarcia
 categories: programação
 title: String a == "b"
-summary: Por que não podemos comparar Strings diretamente em Java?
+sumary: Por que não podemos comparar Strings diretamente em Java?
 ---
 
 Recentemente, um amigo que está aprendendo Java veio me pedir ajuda porque o programa que ele estava escrevendo não estava funcionando. Após algumas perguntas tentando resolver o problema à distância, pedi para ele me enviar o código para dar uma olhada.
